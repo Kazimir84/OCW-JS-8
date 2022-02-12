@@ -14,6 +14,12 @@ let linkList = document.body.querySelectorAll('.linkList');
         parent[key].style.width = 50+'%';
     });
 
+let linkList2 = document.body.getElementsByClassName('linkList');
+for (let i = 0; i < linkList2.length; i++) {
+    let linkList2Element = linkList2[i];
+    linkList2Element.style.width = 75+'%';
+};
+
 // d) отримує текст який зберігається в елементі з класом listElement2
 let listElement2 = document.querySelectorAll('li.listElement2 a');
     listElement2.forEach((value, key, parent) => {
